@@ -1,0 +1,16 @@
+# Target Python runtime: 3.11.0
+
+
+streamlit
+opencv-python-headless
+numpy
+pandas
+matplotlib
+seaborn
+ultralytics          # YOLO model support (lightweight to start)
+kagglehub            # per your request (wraps Kaggle downloads)
+scipy
+pillow
+torch                # if ultralytics requires torch backend
+# Optional (for production / advanced tracking / scaling):
+# norfair, deep_sort_realtime, redis, celery, fastapi
