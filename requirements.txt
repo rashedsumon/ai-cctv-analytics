@@ -1,16 +1,28 @@
-# Target Python runtime: 3.11.0
-
-
+# ---- Streamlit Core ----
 streamlit
-opencv-python-headless
+
+# ---- Computer Vision / OpenCV ----
+opencv-contrib-python-headless   # safer than opencv-python-headless
+
+# ---- ML / DL ----
+torch
+torchvision
+ultralytics        # stable YOLO version that works with Torch 2.2
+
+# ---- Data / Utils ----
 numpy
 pandas
-matplotlib
-seaborn
-ultralytics          # YOLO model support (lightweight to start)
-kagglehub            # per your request (wraps Kaggle downloads)
 scipy
 pillow
-torch                # if ultralytics requires torch backend
-# Optional (for production / advanced tracking / scaling):
-# norfair, deep_sort_realtime, redis, celery, fastapi
+matplotlib
+seaborn
+
+# ---- KaggleHub (Dataset Downloads) ----
+kagglehub
+
+# ---- Optional: Tracking & Production Tools ----
+# norfair
+# deep_sort_realtime
+# fastapi
+# redis
+# celery
